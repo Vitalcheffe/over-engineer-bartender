@@ -1,1 +1,44 @@
-{}
+{
+  "sensor_noise": {
+    "audio_sigma": 0.15,
+    "weight_sigma": 0.18,
+    "vision_sigma": 0.225
+  },
+  "theoretical": {
+    "fused_variance": 0.010519480519480519,
+    "fused_sigma": 0.10256451881367415,
+    "improvement_vs_best_single": 1.7549928774784245
+  },
+  "simulation": {
+    "audio_only": {
+      "rmse": 0.14500901239384748,
+      "mean_error": 0.11330385956831007,
+      "std_error": 0.0904977849583275
+    },
+    "weight_only": {
+      "rmse": 0.1849389416489411,
+      "mean_error": 0.147623749996593,
+      "std_error": 0.11139856630663543
+    },
+    "vision_only": {
+      "rmse": 0.22803699863005295,
+      "mean_error": 0.18249579174564645,
+      "std_error": 0.13673389755043341
+    },
+    "arithmetic_mean": {
+      "rmse": 0.11295755398881654,
+      "mean_error": 0.09060731257717636,
+      "std_error": 0.0674516412749035
+    },
+    "inverse_variance": {
+      "rmse": 0.1050119579974769,
+      "mean_error": 0.08387102305769713,
+      "std_error": 0.06319147738199427
+    },
+    "kalman": {
+      "rmse": 0.10396115682864628,
+      "mean_error": 0.08306437315023162,
+      "std_error": 0.06251585432759812
+    }
+  }
+}
